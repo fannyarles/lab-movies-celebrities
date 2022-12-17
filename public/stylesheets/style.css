@@ -1,8 +1,152 @@
-body {
-  padding: 50px;
+* {
+  margin: 0;
+}
+
+html {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+h2 {
+  margin-bottom: 30px;
+}
+
 a {
-  color: #00b7ff;
+  color: #D52941;
+}
+
+a:hover {
+  color: #990D35;
+  text-decoration: none;
+}
+
+.back-link {
+  display: block;
+  margin: 10px;
+  padding-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+main {
+  padding: 50px;
+  background-color: #eaeaea;
+  min-height: calc(100vh - 80px);
+}
+
+nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  padding-right: 30px;
+}
+
+#movies, #celebrities {
+  display: flex;
+}
+
+.movie-card, .celebrity-card {
+  width: 350px;
+}
+
+#single, .movie-card, .celebrity-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  padding: 30px;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #999;
+  font-style: italic;
+}
+
+.quote {
+  font-style: italic;
+  font-weight: bold;
+  /* font-size: 1.2rem; */
+  color: grey;
+}
+
+.quote::before, .quote::after {
+  content: ' " ';
+  font-family: serif;
+  /* font-size: 1.2rem; */
+  color: grey;
+}
+
+
+button, input[type=submit] {
+  display: inline-block;
+  background-color: #D52941;
+  color: white;
+  border: 0;
+  padding: 6px 12px;
+  margin-top: 30px;
+}
+
+button:hover, input[type=submit]:hover {
+  background-color: #990D35;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin: 20px 0 5px 0;
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: .5px;
+}
+
+input[type=text], textarea, select {
+  border: 0px;
+  padding: 15px;
+  min-width: 400px;
+}
+
+#form {
+  margin: auto;
+  width: fit-content;
+}
+
+button, form {
+  display: inline-block;
+}
+
+.cast {
+  background-color: #f1f1f1;
+}
+
+.cast ul {
+  margin: 0;
+  padding: 20px;
+}
+
+.cast li {
+  list-style: none;
 }

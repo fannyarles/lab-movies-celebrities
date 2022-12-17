@@ -1,0 +1,19 @@
+<a href="/movies" class="back-link">&#8592 Back to movies</a>
+<div id="single">
+    <h3>{{movie.title}}</h3>
+    <p class="subtitle">{{movie.genre}}</p>
+    <p>{{movie.plot}}</p>
+
+    <div class="cast">
+        <ul>
+            {{#each movie.cast}}
+                <li><b>{{this.name}}</b> <i>({{this.occupation}})</i> : <span class="quote">{{this.catchPhrase}}</span></li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="actions">
+        <a href="/movie/{{movie._id}}/edit"><button>Edit Movie</button></a>
+        <form action="/movie/{{movie._id}}/delete" method="post" class="delete-btn"><button>Delete movie</button></form>
+    </div>
+</div>

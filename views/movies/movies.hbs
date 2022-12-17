@@ -1,0 +1,14 @@
+<h2>Movie Database</h2>
+
+<div id="movies">
+    {{#each movies}}
+        <div class="movie-card">
+            <div class="movie-details">
+                <h3><a href="/movie/{{this._id}}">{{this.title}}</a></h3>
+                <p class="subtitle">{{this.genre}}</p>
+                <p class="plot">{{this.plot}}</p>
+            </div>
+            <button><a href="/movie/{{this._id}}">View more</a></button>
+        </div>
+    {{/each}}
+</div>

@@ -1,0 +1,18 @@
+<h2>Celebrities Database</h2>
+
+<div id="celebrities">
+    {{#each celebrity}}
+        <div class="celebrity-card">
+            <div class="celebrities-infos">
+                <h3>{{this.name}}</h3>
+                <p class="subtitle">{{this.occupation}}</p>
+                <p class="quote">{{this.catchPhrase}}</p>
+
+                <strong>Movies: </strong><br/>
+                {{#each this.moviesId}}
+                    {{this.title}}<br/>
+                {{/each}}
+            </div>
+        </div>
+    {{/each}}
+</div>
